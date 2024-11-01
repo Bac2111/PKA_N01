@@ -381,3 +381,4 @@ Kiểm soát mã nguồn hiệu quả: Git giúp phân quyền và kiểm soát 
 GitHub: Nền tảng phổ biến nhất, cung cấp tính năng quản lý mã nguồn mở và hỗ trợ các công cụ làm việc nhóm.
 GitLab: Hỗ trợ cả dự án mã nguồn mở và mã nguồn đóng, có nhiều tính năng CI/CD.
 Bitbucket: Hỗ trợ các dự án nguồn đóng, thường được dùng trong doanh nghiệp với các dự án dùng hệ sinh thái Atlassian.
+
