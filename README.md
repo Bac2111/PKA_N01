@@ -79,7 +79,7 @@ Hệ nhị phân chỉ sử dụng hai chữ số là 0 và 1.
 Máy tính sử dụng hệ nhị phân vì nó chỉ hiểu hai trạng thái là bật (1) và tắt (0), phù hợp với bản chất của các mạch điện tử.
 Ví dụ: Số nhị phân 
 1011
-1011 tương ứng với 
+1011 tương ứng vơi
 1
 ×
 2
@@ -245,7 +245,7 @@ Nén dữ liệu (Data Compression): Giúp giảm dung lượng lưu trữ dữ 
 Nén không mất dữ liệu (Lossless): Dữ liệu gốc có thể phục hồi hoàn toàn sau khi giải nén, như ZIP, PNG.
 Nén mất dữ liệu (Lossy): Giảm kích thước nhưng không thể phục hồi hoàn toàn, thường dùng cho ảnh và âm thanh như JPEG, MP3.
 
-#### Chương 3 Kỹ nănh sử dụng máy tính
+#### Chương 3 Kỹ năng sử dụng máy tính
 1. Làm quen với giao diện máy tính
 Màn hình chính (Desktop): Là giao diện chính của hệ điều hành khi người dùng mở máy tính. Màn hình chính bao gồm các biểu tượng (icon) và thanh tác vụ (taskbar).
 Thanh tác vụ (Taskbar): Nằm ở dưới cùng màn hình, chứa các nút ứng dụng đang mở và nút Start để truy cập các tính năng của hệ điều hành.
@@ -283,138 +283,43 @@ Tính mở và miễn phí: Linux miễn phí và mã nguồn mở, cho phép m�
 Các bản phân phối (distributions - distros): Linux có nhiều phiên bản khác nhau, được gọi là "bản phân phối" như Ubuntu, Fedora, CentOS, và Arch Linux, mỗi bản có những đặc điểm và cấu hình riêng phù hợp cho từng loại người dùng.
 2. Cấu trúc hệ thống tập tin trong Linux
 Root directory ("/"): Là thư mục gốc, nơi bắt đầu của toàn bộ hệ thống tập tin.
-Thư mục con: Các thư mục con quan trọng bao gồm:
-/bin: Chứa các chương trình cơ bản (binary) cần thiết để sử dụng hệ thống.
+cac thư mục con quan trọng bao gồm :
+/bin: Chứa các chương trình cơ bản cần thiết để sử dụng hệ thống.
 /etc: Chứa các tập tin cấu hình hệ thống.
-/home: Chứa thư mục cá nhân của từng người dùng.
-/var: Chứa các tập tin thay đổi thường xuyên (logs, cache).
-/usr: Chứa các ứng dụng và tiện ích được cài đặt.
+/home: Chứa các thư mục cá nhân của từng người dùng.
+/var: Chứa các tập tin thay đổi thường xuyên.
+/usr: Chứa các ứng dụng và tiện ích được cái đặt.
 /tmp: Chứa các tập tin tạm thời.
 3. Các lệnh cơ bản trong Linux
-a. Lệnh thao tác với thư mục và tập tin
+a. Lệnh thao tác vơi thư mục và tập tin .
+
 ls: Liệt kê nội dung trong thư mục.
-
-bash
-Sao chép mã
-ls       # Hiển thị các tệp và thư mục
-ls -l    # Hiển thị chi tiết
-ls -a    # Hiển thị tất cả các tệp, bao gồm tệp ẩn
 cd: Thay đổi thư mục.
-
-bash
-Sao chép mã
-cd /home          # Chuyển đến thư mục /home
-cd ..             # Lùi một cấp thư mục
-cd ~              # Chuyển về thư mục người dùng hiện tại
-pwd: Hiển thị đường dẫn của thư mục hiện tại.
-
-bash
-Sao chép mã
-pwd               # Hiển thị thư mục đang đứng
+pwd: Hiển thị đường dẫn của thư mục hiện tại
 mkdir: Tạo thư mục mới.
+rm: Xóa tệp tin hoặc thư mục
+cp: Sao chép tệp tin hoặc thư mục.
+mv: Di chuyển hoặc đổi tên tệp/thư mục.
 
-bash
-Sao chép mã
-mkdir my_folder   # Tạo thư mục có tên là my_folder
-rm: Xóa tập tin hoặc thư mục.
-
-bash
-Sao chép mã
-rm file.txt             # Xóa tệp file.txt
-rm -r my_folder         # Xóa thư mục my_folder và toàn bộ nội dung
-cp: Sao chép tập tin hoặc thư mục.
-
-bash
-Sao chép mã
-cp file1.txt file2.txt      # Sao chép file1.txt thành file2.txt
-cp -r folder1 folder2       # Sao chép cả thư mục folder1 sang folder2
-mv: Di chuyển hoặc đổi tên tập tin/thư mục.
-
-bash
-Sao chép mã
-mv old_name.txt new_name.txt    # Đổi tên tập tin
-mv file.txt /home/user/docs/    # Di chuyển tập tin đến thư mục khác
-b. Lệnh làm việc với hệ thống và quyền
+b. Lệnh làm việc với hệ thống và quyền.
 sudo: Chạy lệnh với quyền quản trị.
-
-bash
-Sao chép mã
-sudo apt update            # Chạy lệnh cập nhật hệ thống với quyền quản trị
 chmod: Thay đổi quyền truy cập cho tệp hoặc thư mục.
-
-bash
-Sao chép mã
-chmod 755 file.txt         # Đặt quyền cho file.txt
 chown: Thay đổi chủ sở hữu của tệp hoặc thư mục.
 
-bash
-Sao chép mã
-sudo chown user file.txt   # Đặt chủ sở hữu của file.txt là user
-c. Lệnh tìm kiếm và hiển thị nội dung
+c. Lệnh tìm kiếm và hiển thị nội dung.
 cat: Hiển thị nội dung của tệp.
+grep: Tìm kiếm trong tệp tin dựa theo từ khóa.
+find: Tìm kiếm tệp hoặc thư mục trong hệ thống
 
-bash
-Sao chép mã
-cat file.txt               # Hiển thị nội dung file.txt
-grep: Tìm kiếm trong tập tin dựa trên từ khóa.
-
-bash
-Sao chép mã
-grep "keyword" file.txt    # Tìm "keyword" trong file.txt
-find: Tìm kiếm tệp hoặc thư mục trong hệ thống.
-
-bash
-Sao chép mã
-find /home -name "file.txt"    # Tìm file.txt trong thư mục /home
-d. Lệnh quản lý tiến trình
-ps: Hiển thị các tiến trình đang chạy.
-
-bash
-Sao chép mã
-ps aux                    # Hiển thị tất cả tiến trình đang chạy
+d. Lệnh quản lý tiến trình.
+ps: Hiển thị tiến trình đang chạy.
 top: Theo dõi hoạt động của hệ thống và tiến trình.
+kill: Dừng 1 tiến trình.
 
-bash
-Sao chép mã
-top                       # Hiển thị thông tin về tài nguyên hệ thống và các tiến trình
-kill: Dừng một tiến trình.
-
-bash
-Sao chép mã
-kill 1234                 # Dừng tiến trình có ID là 1234
-4. Quản lý gói phần mềm
-Trong Linux, các gói phần mềm (package) có thể được quản lý bằng các lệnh:
-
-apt (trên Ubuntu/Debian):
-
-bash
-Sao chép mã
-sudo apt update              # Cập nhật danh sách gói
-sudo apt install package     # Cài đặt gói phần mềm
-sudo apt remove package      # Gỡ bỏ gói phần mềm
-yum (trên CentOS/RHEL):
-
-bash
-Sao chép mã
-sudo yum update              # Cập nhật hệ thống
-sudo yum install package     # Cài đặt gói phần mềm
-sudo yum remove package      # Gỡ bỏ gói phần mềm
-5. Một số lệnh khác hữu ích
-'''clear: Xóa màn hình terminal.
-
-bash
-Sao chép mã
-clear
+4. Một số lệnh khác hữu ích
+clear: Xóa màn hình turminal
 echo: Hiển thị chuỗi ký tự ra màn hình.
-
-bash
-Sao chép mã
-echo "Hello, Linux!"        # In ra màn hình dòng "Hello, Linux!"
 history: Hiển thị lịch sử các lệnh đã chạy.
-
-bash
-Sao chép mã
-history                     # Hiển thị danh sách các lệnh đã thực hiện
 
 ###### Chương 5 Git và ứng dụng
 1. Khái niệm cơ bản về Git
