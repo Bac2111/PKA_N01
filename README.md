@@ -72,9 +72,8 @@ Ví dụ: Số
 1
  +3×10 
 0
- .
 
-b. Hệ nhị phân (Binary - Hệ cơ số 2)
+ b. Hệ nhị phân (Binary - Hệ cơ số 2)
 Hệ nhị phân chỉ sử dụng hai chữ số là 0 và 1.
 Máy tính sử dụng hệ nhị phân vì nó chỉ hiểu hai trạng thái là bật (1) và tắt (0), phù hợp với bản chất của các mạch điện tử.
 Ví dụ: Số nhị phân 
@@ -96,7 +95,7 @@ Ví dụ: Số nhị phân
 1
 +
 1
-×
+x
 2
 0
 =
@@ -104,12 +103,14 @@ Ví dụ: Số nhị phân
 1×2 
 3
  +0×2 
+
 2
  +1×2 
 1
  +1×2 
 0
  =11 trong hệ thập phân.
+
 
 c. Hệ bát phân (Octal - Hệ cơ số 8)
 Hệ bát phân sử dụng tám chữ số từ 0 đến 7.
